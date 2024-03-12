@@ -6,6 +6,4 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080
 
-#CMD ["nginx", "-c", "/app/nginx.conf"]
-#CMD ["nginx", "-c", "/app/nginx.conf", "-g", "daemon off;"]
 CMD ["nginx", "-g", "daemon off;"]
